@@ -1,2 +1,216 @@
-# blood-moon
-a store of products
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blood Moon - Store</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 3px solid #990000;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo h1 {
+            color: #e60000;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+        }
+
+        .logo span {
+            color: #e60000;
+            font-size: 12px;
+            letter-spacing: 2px;
+            align-self: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e60000;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            color: #e60000;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px;
+        }
+
+        .product {
+            background-color: #1a1a1a;
+            border: 2px solid #990000;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            border-color: #e60000;
+        }
+
+        .product img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .product h3 {
+            color: #e60000;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            background-color: #e60000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #990000;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #990000;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .logo {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Blood Moon</h1>
+            <span>ブラッドムーン</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="file:///C:/Users/Usu%C3%A1rio/Desktop/Blood%20moon/index2.html">Contato</a></li>
+                <li><a href="#">Carrinho 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>VISTA O SEU LADO SOMBRIO</h2>
+        <p>Roupas e acessórios para quem carrega a escuridão com estilo. Preto, vermelho e atitude. Seja Blood Moon.</p>
+    </section>
+
+    <section class="products" id="produtos">
+        <div class="product">
+            <img src="camisa_blood_moon_mockup_fundo_branco.png" alt="Camiseta Eclipse de Sangue" />
+            <h3>Camiseta Eclipse de Sangue</h3>
+            <p>Uma peça sombria, elegante e poderosa. Feita para quem carrega o eclipse no peito.</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <img src="moletom_fantasma.jpg" alt="Moletom Fantasma da Noite" />
+            <h3>Moletom Fantasma da Noite</h3>
+            <p>Conforto e mistério em uma peça que te envolve nas sombras.</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <img src="boné_lunar.jpg" alt="Boné Lunar Vermelho" />
+            <h3>Boné Lunar Vermelho</h3>
+            <p>Estilo agressivo com toque vermelho sangue para marcar presença.</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="product">
+            <img src="pulseira_gothic.jpg" alt="Pulseira Gothic Eclipse" />
+            <h3>Pulseira Gothic Eclipse</h3>
+            <p>Acessório perfeito para completar seu look dark com atitude.</p>
+            <button>Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Blood Moon - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
