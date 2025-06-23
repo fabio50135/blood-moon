@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Blood Moon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: white;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            border-bottom: 3px solid #990000;
+        }
+
+        .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .logo h1 {
+            color: #e60000;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 36px;
+        }
+
+        .logo span {
+            color: #e60000;
+            font-size: 12px;
+            letter-spacing: 2px;
+            align-self: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e60000;
+        }
+
+        .contact-page {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .contact-page h2 {
+            color: #e60000;
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .contact-page p {
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 18px;
+        }
+
+        .contact-info {
+            background-color: #0d0d0d;
+            padding: 40px 20px;
+            text-align: center;
+            border: 2px solid #990000;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-info h3 {
+            color: #e60000;
+            font-size: 28px;
+            margin-bottom: 15px;
+            font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .contact-info p {
+            color: #ccc;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .contact-info a {
+            color: #e60000;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #ff3333;
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #990000;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .logo {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Blood Moon</h1>
+            <span>ブラッドムーン</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="file:///C:/Users/Usu%C3%A1rio/Desktop/Blood%20moon/index.html#produtos">Produtos</a></li>
+                <li><a href="file:///C:/Users/Usu%C3%A1rio/Desktop/Blood%20moon/index2.html#">Contato</a></li>
+                <li><a href="#">Carrinho 🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-page">
+        <h2>Fale Conosco</h2>
+        <p>Ficou com dúvidas, sugestões, quer fazer um pedido personalizado ou só trocar uma ideia? Fala com a Blood Moon:</p>
+
+        <div class="contact-info">
+            <h3>📧 E-mail</h3>
+            <p><a href="mailto:bloodmoon50135@gmail.com">bloodmoon50135@gmail.com</a></p>
+
+            <h3>💬 WhatsApp</h3>
+            <p><a href="https://wa.me/5516991051503" target="_blank">(16) 99105-1503</a></p>
+
+            <h3>📸 Instagram</h3>
+            <p><a href="https://www.instagram.com/blood_moon50135/" target="_blank">@blood_moon50135</a></p>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 Blood Moon - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
